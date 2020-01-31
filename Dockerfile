@@ -10,3 +10,4 @@ RUN pecl install imagick-beta && docker-php-ext-enable --ini-name 20-imagick.ini
 
 RUN curl -o /tmp/composer-setup.php https://getcomposer.org/installer && php /tmp/composer-setup.php --no-ansi --install-dir=/usr/local/bin --filename=composer --version=1.9.2 && rm -rf /tmp/composer-setup.php
 
+EXPOSE 9000
